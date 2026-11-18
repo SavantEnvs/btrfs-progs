@@ -1,0 +1,8 @@
+project: savantenvs/btrfs-progs
+target: btrfs_receive
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/btrfs_receive/testsuite
+cmds:
+  - cmd: /mayhem/btrfs_receive @@
+    timeout: 30

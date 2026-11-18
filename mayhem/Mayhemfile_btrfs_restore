@@ -1,0 +1,8 @@
+project: savantenvs/btrfs-progs
+target: btrfs_restore
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/btrfs_restore/testsuite
+cmds:
+  - cmd: /mayhem/btrfs_restore @@
+    timeout: 30
